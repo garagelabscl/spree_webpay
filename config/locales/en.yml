@@ -1,0 +1,8 @@
+en:
+  spree:
+    webpay_plus_failure: 'The payment was not successful. Please try again.'
+    webpay: 
+      causes: The possible causes of this rejection are
+      failed_credit: Error in entering your credit or debit card data (date and/or security code)
+      failed_data: Your credit or debit card does not have the necessary quota to cancel the purchase
+      failed_bank: Card not yet enabled in the financial system.

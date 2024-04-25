@@ -1,0 +1,8 @@
+es:
+  spree:
+    webpay_plus_failure: 'El pago no se realizó correctamente. Por favor, inténtalo de nuevo.'
+    webpay: 
+      causes: Las posibles causas de este rechazo son
+      failed_credit: Error en el ingreso de los datos de tu tarjeta de crédito o débito (fecha y/o código de seguridad)
+      failed_data: Tu tarjeta de crédito o débito no cuenta con el límite necesario para realizar la compra
+      failed_bank: Tarjeta aún no habilitada en el sistema financiero.

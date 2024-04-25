@@ -1,0 +1,42 @@
+<div id="checkout" class="container checkout" data-hook>
+  <%= render partial: 'spree/admin/shared/error_messages', locals: { target: @order } %>
+  <div class="text-uppercase checkout-header-title">
+    <h1 data-hook="checkout_title">
+      <%= Spree.t(:checkout) %>
+    </h1>
+  </div>
+  <div class="row checkout-content" data-hook="checkout_content">
+      <div class="<%= if @order.state != 'confirm' then 'col-lg-6' else 'col-md-12' end %>" data-hook="checkout_form_wrapper">
+            <h1 data-hook="checkout_subtitle">
+              <%= Spree.t(:webpay_plus_failure) %>
+            </h1>
+          <div data-hook="webpay_field_wrapper">
+              <fieldset id="billing" data-hook>
+                <hr class="clear" />
+                <p> <%= Spree.t(:order) %> <%= @order.number %> </p>
+                <p><%=Spree.t("webpay.causes") %>:</p>
+
+                <ul>
+                  <li>
+                    <span><%=Spree.t("webpay.failed_data") %></span>
+                  </li>
+                  <li>
+                    <span><%=Spree.t("webpay.failed_credit") %></span>
+                  </li>
+                  <li>
+                    <span><%=Spree.t("webpay.failed_bank") %></span>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <hr class="clear" />
+
+              <div class="form-buttons" data-hook="buttons">
+                <%= link_to Spree.t(:previous), checkout_state_path('payment'), :class => 'btn btn-primary text-uppercase font-weight-bold w-100' %>
+                <script>Spree.disableSaveOnClick();</script>
+              </div>
+              <hr class="clear" />
+        </div>
+      </div>
+  </div>
+</div>
