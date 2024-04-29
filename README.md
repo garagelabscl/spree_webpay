@@ -1,6 +1,10 @@
 # SpreeWebpay
 
-Introduction goes here.
+SpreeWebpay is a library that provides a gateway for the Transbank payment method called Webpay. This extension allows you to integrate Webpay into your Spree-based e-commerce application, enabling secure and convenient online payments for your customers.
+
+With SpreeWebpay, you can easily add Webpay as a payment option, allowing your customers to complete their transactions using their preferred payment method. This integration ensures a seamless checkout experience and helps increase customer satisfaction.
+
+To get started with SpreeWebpay, follow the installation instructions below. Once installed, you can test the integration and customize it to fit your specific requirements. If you encounter any issues or have suggestions for improvement, please refer to the contributing guidelines for assistance.
 
 ## Installation
 
@@ -46,4 +50,4 @@ If you'd like to contribute, please take a look at the
 [instructions](CONTRIBUTING.md) for installing dependencies and crafting a good
 pull request.
 
-Copyright (c) 2024 [name of extension creator], released under the New BSD License
+Copyright (c) 2024 Daniel Vargas, released under the New BSD License
